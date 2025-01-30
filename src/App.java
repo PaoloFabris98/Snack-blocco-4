@@ -5,6 +5,7 @@ public class App {
         ArrayList<String> strings = new ArrayList<>();
         int a = 3;
         int b = 6;
+        ArrayList<String> newStrings = new ArrayList<>();
 
         strings.add("casa");
         strings.add("albero");
@@ -30,6 +31,7 @@ public class App {
                                 + strings.size() + ")");
             }
             if (i >= (a - 1) && i <= (b - 1)) {
+                newStrings.add(strings.get(i));
                 System.out.println(strings.get(i));
             }
         }
