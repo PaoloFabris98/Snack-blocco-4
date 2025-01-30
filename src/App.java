@@ -17,9 +17,12 @@ public class App {
         strings.add("strada");
         strings.add("auto");
         int a = 3;
-        int b = 14;
+        int b = 6;
 
         for (int i = 0; i < strings.size(); i++) {
+            if (a >= b) {
+                throw new IllegalArgumentException("Il valore di A non può essere uguale o inferiore a quello di B");
+            }
             if (a < 0 || b > strings.size()) {
                 throw new IllegalArgumentException(
                         "I valori non possono essere inferiori a 0 e superiori alla lunghezza dell'array stesso " + "("
