@@ -3,6 +3,9 @@ import java.util.ArrayList;
 public class App {
     public static void main(String[] args) throws Exception {
         ArrayList<String> strings = new ArrayList<>();
+        int a = 3;
+        int b = 6;
+
         strings.add("casa");
         strings.add("albero");
         strings.add("mare");
@@ -16,8 +19,6 @@ public class App {
         strings.add("università");
         strings.add("strada");
         strings.add("auto");
-        int a = 3;
-        int b = 6;
 
         for (int i = 0; i < strings.size(); i++) {
             if (a >= b) {
